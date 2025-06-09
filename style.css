@@ -1,0 +1,764 @@
+@font-face {
+    font-family: "Press Start 2P";
+    src: url("assets/fonts/PressStart2P-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html,
+body {
+    overflow: hidden;
+
+}
+
+body {
+
+    background-color: #f6f3ea;
+    font-family: "Press Start 2P", cursive;
+    color: #333;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f6f3ea;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.image-30 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.image-27 {
+    position: absolute;
+    bottom: 0;
+    height: 20.25vh;
+    left: 0;
+    width: 100vw;
+}
+
+.image-27 img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: 50.68% 87.31%;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image-26-container {
+    position: absolute;
+    display: flex;
+    height: 68.15vh;
+    align-items: center;
+    justify-content: center;
+    width: 19.64vw;
+    top: calc(8.33333% + 11.66vh);
+    left: calc(75% - 4.06vw);
+}
+
+.image-26 {
+    height: 67.81vh;
+    width: 19.2vw;
+    transform: rotate(-0.636deg);
+}
+
+.image-26 img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: 56.1% 50.94%;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.component-4 {
+    position: absolute;
+    height: 32.77vh;
+    width: 45.67vw;
+    top: calc(58.3333% + 3.18vh);
+    left: calc(16.6667% + 6.09vw);
+}
+
+.desk1-1 {
+    background-image: url("assets/Component 4.png");
+    background-size: 100.06% 100%;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    aspect-ratio: 3401 / 1372;
+}
+
+.desk1-5 {
+    background-image: url("assets/Component 4.png");
+    background-size: 461.85% 310.53%;
+    background-position: 83.82% 46.25%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 576px;
+    top: 109px;
+    width: 190px;
+    height: 114px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.desk1-5:hover {
+    transform: translateX(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.desk1-4 {
+    background-image: url("assets/Component 4.png");
+    background-size: 454.67% 600%;
+    background-position: 83.6% 17.29%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 572px;
+    top: 50px;
+    width: 193px;
+    height: 59px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.desk1-4:hover {
+    transform: translateX(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.desk1-3 {
+    background-image: url("assets/Component 4.png");
+    background-size: 469.26% 321.82%;
+    background-position: 15.24% 45.08%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 105px;
+    top: 110px;
+    width: 187px;
+    height: 110px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.desk1-3:hover {
+    transform: translateX(5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.desk1-2 {
+    background-image: url("assets/Component 4.png");
+    background-size: 461.85% 570.97%;
+    background-position: 15.46% 16.78%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 11.973%;
+    right: 66.363%;
+    top: 49px;
+    aspect-ratio: 190 / 62;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.desk1-2:hover {
+    transform: translateX(5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.discog,
+.las-eternas,
+.my-trinity,
+.ruben-blades-1,
+.image-54,
+.heat,
+.insta,
+.github,
+.board {
+    position: absolute;
+    transition: none;
+}
+
+.discog img,
+.las-eternas img,
+.my-trinity img,
+.ruben-blades-1 img,
+.image-54 img,
+.heat img,
+.insta img,
+.github img,
+.board img {
+    transition: none;
+}
+
+.discog {
+    cursor: pointer;
+    height: 12.41vh;
+    width: 17.7vw;
+    top: calc(33.3333% + 7.04vh);
+    left: calc(75% - 2.76vw);
+    overflow: visible;
+    opacity: 0.85;
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+.discog img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    background-size: 161.6% 334.65%;
+
+    background-position: 50.33% 18.99%;
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.discog:hover img {
+    transform: rotate(5deg);
+}
+
+.las-eternas {
+    cursor: pointer;
+    height: 16.48vh;
+    width: 10.62vw;
+    top: calc(75% - 4.92vh);
+    left: calc(75% + 0.78vw);
+    overflow: visible;
+    border: none;
+    padding: 0;
+    background: none;
+    scale: 0.9;
+}
+
+.las-eternas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: 100% 114.57%;
+    background-position: 0% 100%;
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.las-eternas:hover img {
+    transform: rotate(5deg);
+}
+
+.my-trinity {
+    cursor: pointer;
+    height: 13.61vh;
+    width: 7.03vw;
+    top: calc(50% + 5.49vh);
+    left: calc(75% - 2.81vw);
+    overflow: visible;
+    transform: scaleY(1);
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+.my-trinity img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: 100.03% 128.57%;
+    background-position: 50% 100%;
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.my-trinity:hover img {
+    transform: rotate(5deg);
+}
+
+.ruben-blades-1 {
+    cursor: pointer;
+    height: 40vh;
+    left: 9.01vw;
+    width: 18vw;
+    top: calc(8.33333% + 9.81vh);
+    overflow: visible;
+    border: none;
+    padding: 0;
+    background: none;
+    position: relative;
+}
+
+.ruben-blades-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-size: 157.73% 123.15%;
+    background-position: 50% 49.47%;
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.ruben-blades-1:hover img {
+    transform: rotate(5deg);
+}
+
+.papi-blades {
+    font-family: "Press Start 2P";
+    color: white;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    pointer-events: none;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 3.5vh;
+}
+
+.ruben-blades-1:hover .papi-blades {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.image-54 {
+    cursor: pointer;
+    height: 12vh;
+    width: 7vw;
+    top: calc(58.3333% - 1.09vh);
+    left: calc(83.3333% - 1.21vw);
+    overflow: visible;
+    transform: rotate(-2.358deg);
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+.image-54 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-size: cover;
+    background-position: 50% 50%;
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.image-54:hover img {
+    transform: rotate(5deg);
+}
+
+.heat {
+    cursor: pointer;
+    height: 36vh;
+    left: 7.45vw;
+    width: 15vw;
+    top: calc(66.6667% - 2.47vh);
+    overflow: visible;
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+.heat img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-size: 202.26% 100%;
+    background-position: 49.17% 0%;
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.heat:hover img {
+    transform: rotate(5deg);
+}
+
+.insta {
+    cursor: pointer;
+    height: 10vh;
+    width: 8vw;
+    top: calc(58.3333% - 2.35vh);
+    left: calc(25% + 3.59vw);
+    overflow: visible;
+    border: none;
+    padding: 0;
+    scale: 0.9;
+    background: none;
+}
+
+.insta img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-size: cover;
+    background-position: 50% 50%;
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.insta:hover img {
+    transform: rotate(5deg);
+}
+
+.github {
+    cursor: pointer;
+    height: 25vh;
+    width: 22vw;
+    top: calc(41.6667% + 2.1vh);
+    left: calc(33.3333% + 3.28vw);
+    overflow: visible;
+    border: none;
+    padding: 0;
+    scale: 0.8;
+    background: none;
+}
+
+.github img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-size: 116.49% 116.37%;
+    background-position: 0% 0.16%;
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.github:hover img {
+    transform: rotate(5deg);
+}
+
+.board {
+    cursor: pointer;
+    height: 32vh;
+    overflow: visible;
+    top: 12.87vh;
+    width: 28vw;
+    left: calc(33.3333% + 0.5vw);
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+.board img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-size: cover;
+    background-position: 50% 50%;
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.board:hover img {
+    transform: rotate(5deg);
+}
+
+.full-screen-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.hover-text {
+    font-family: "Press Start 2P", cursive;
+    color: white;
+
+    font-size: 3.5vh;
+
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+    white-space: nowrap;
+
+}
+
+.discog-text {
+    font-family: "Press Start 2P";
+    color: white;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    pointer-events: none;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 3.5vh;
+}
+
+.discog:hover .discog-text {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.las-eternas-text {
+    font-family: "Press Start 2P";
+    color: white;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    pointer-events: none;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 3.5vh;
+}
+
+.las-eternas:hover .las-eternas-text {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.my-trinity-text {
+    font-family: "Press Start 2P";
+    color: white;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    pointer-events: none;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 3.5vh;
+}
+
+.my-trinity:hover .my-trinity-text {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.image-54-text {
+    font-family: "Press Start 2P";
+    color: white;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    pointer-events: none;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 3.5vh;
+}
+
+.image-54:hover .image-54-text {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.heat-text {
+    font-family: "Press Start 2P";
+    color: white;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    pointer-events: none;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 3.5vh;
+}
+
+.heat:hover .heat-text {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.insta-text {
+    font-family: "Press Start 2P";
+    color: white;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    pointer-events: none;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 3.5vh;
+}
+
+.insta:hover .insta-text {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.github-text-new {
+    font-family: "Press Start 2P";
+    color: white;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    pointer-events: none;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 3.5vh;
+}
+
+.github:hover .github-text-new {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.board-text-new {
+    font-family: "Press Start 2P";
+    color: white;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    pointer-events: none;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 3.5vh;
+}
+
+.board:hover .board-text-new {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(10deg);
+}
+
+
+
+
+.desk1-5-text {
+    font-family: "Press Start 2P";
+    color: white;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    pointer-events: none;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.desk1-5:hover .desk1-5-text {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.desk1-4-text {
+    font-family: "Press Start 2P";
+    color: white;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    pointer-events: none;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.desk1-4:hover .desk1-4-text {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.desk1-3-text {
+    font-family: "Press Start 2P";
+    color: white;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    pointer-events: none;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.desk1-3:hover .desk1-3-text {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.desk1-2-text {
+    font-family: "Press Start 2P";
+    color: white;
+    text-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    pointer-events: none;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.desk1-2:hover .desk1-2-text {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0deg);
+}
