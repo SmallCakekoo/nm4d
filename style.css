@@ -115,10 +115,10 @@ body {
   background-position: 83.82% 46.25%;
   background-repeat: no-repeat;
   position: absolute;
-  left: 576px;
-  top: 109px;
-  width: 190px;
-  height: 114px;
+  left: 30vw;
+  top: 12.1vh;
+  width: 9.9vw;
+  height: 12.6vh;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -134,10 +134,10 @@ body {
   background-position: 83.6% 17.29%;
   background-repeat: no-repeat;
   position: absolute;
-  left: 572px;
-  top: 50px;
-  width: 193px;
-  height: 59px;
+  left: 29.8vw;
+  top: 5.3vh;
+  width: 10.1vw;
+  height: 6.9vh;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -153,10 +153,10 @@ body {
   background-position: 15.24% 45.08%;
   background-repeat: no-repeat;
   position: absolute;
-  left: 105px;
-  top: 110px;
-  width: 187px;
-  height: 110px;
+  left: 5.5vw;
+  top: 12.2vh;
+  width: 9.7vw;
+  height: 12.2vh;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -172,11 +172,13 @@ body {
   background-position: 15.46% 16.78%;
   background-repeat: no-repeat;
   position: absolute;
-  left: 11.973%;
+  left: 5.5vw;
   right: 66.363%;
-  top: 49px;
+  top: 5.3vh;
   aspect-ratio: 190 / 62;
   cursor: pointer;
+  width: 9.9vw;
+  height: 6.7vh;
   transition: all 0.2s ease-in-out;
 }
 
@@ -806,11 +808,269 @@ body {
 
 .invisible-close {
   position: absolute;
+  top: 0.85vh;
+  left: 34.1vw;
+  width: 2.7vw;
+  height: 3.5vh;
+  z-index: 1002;
+  cursor: pointer;
+  background-color: rgba(0, 89, 255, 0);
+}
+
+.screamer-overlay {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1002; /* Mayor que el z-index del close-button */
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.screamer-overlay img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.overlay-dorian {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+
+  z-index: 10000;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-discog {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-discog.active {
+  display: flex;
+}
+
+.overlay-discog-content {
+  position: relative;
+  width: 60%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discog-overlay-img {
+  position: absolute;
+  max-width: 60%;
+  max-height: 60%;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.discog-album-img {
+  position: absolute;
+  max-width: 30%;
+  max-height: 30%;
+  object-fit: contain;
+  z-index: 3;
+  left: 35%;
+}
+
+.discog-vinil-img {
+  position: absolute;
+  max-width: 30%;
+  max-height: 30%;
+  object-fit: contain;
+  z-index: 2;
+  left: 46%;
+  cursor: grab;
+  transform: translateX(-15%);
+}
+
+.invisible-close-discog {
+  position: absolute;
+  top: 22.5%;
+  right: 26%;
+  width: 14%;
+  height: 8%;
+  z-index: 10002;
+  background-color: transparent;
   cursor: pointer;
-  background-color: aqua;
+}
+
+.overlay-dorian-content {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-dorian {
+  margin-top: 114px;
+  max-width: 82%;
+  max-height: 82%;
+  object-fit: contain;
+  z-index: 10001;
+}
+
+.overlay-github {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-github.active {
+  display: flex;
+}
+
+.overlay-github-content {
+  position: relative;
+  width: 60%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invisible-close-github {
+  position: absolute;
+  top: 2.5%;
+  right: 20%;
+  width: 15%;
+  height: 10%;
+  z-index: 10002;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.github-overlay-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  z-index: 10001;
+}
+
+.github-qr-img {
+  position: absolute;
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+  z-index: 10002;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.github-qr-img.active {
+  opacity: 1;
+}
+
+.invisible-close-qr {
+  position: absolute;
+  top: 16%;
+  right: 35%;
+  width: 10%;
+  height: 7%;
+  z-index: 10003;
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.github-qr-img.active+.invisible-close-qr {
+  opacity: 1;
+}
+
+.overlay-insta {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-insta.active {
+  display: flex;
+}
+
+.overlay-insta-content {
+  position: relative;
+  width: 60%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invisible-close-insta {
+  position: absolute;
+  top: 1.5%;
+  right: 26%;
+  width: 14%;
+  height: 8%;
+  z-index: 10002;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.insta-solo-img,
+.insta-photo-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  position: absolute;
+}
+
+.insta-photo-img {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 10001;
+}
+
+.insta-photo-img.active {
+  opacity: 1;
+}
+
+.insta-solo-clickable-bottom {
+  position: absolute;
+  bottom: 4%;
+  left: 46%;
+  width: 8%;
+  height: 10%;
+  z-index: 10002;
+  background-color: transparent;
+  cursor: pointer;
 }
